@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pritesh Patel</title>
-<meta name="description" content="Pritesh Patel. Led products that lifted Walmart e-commerce in-stock by $10B. Built search for CNN and the NBA, and data products at GE. Now working on control of AI agents.">
+<meta name="description" content="Pritesh Patel. Twenty years of walking into messy problems and leaving working products and teams behind. Personal projects, and a current obsession with keeping AI telling the truth.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -28,23 +28,24 @@ main{max-width:62rem;margin:0 auto;padding:clamp(2.5rem,8vw,5.5rem) clamp(1rem,5
 h1,h3,.big{font-family:Fraunces,serif;font-weight:400;text-wrap:balance}
 h1{font-size:clamp(2.4rem,1.4rem + 5vw,5rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 1.5rem;max-width:15ch}
 em{font-style:italic;color:var(--mark)}
-.lede{max-width:40rem;font-size:1.2em;margin:0 0 1rem}
-.hero{margin-bottom:clamp(1.5rem,4vw,2.5rem)}
+.hero{max-width:41rem;margin-bottom:clamp(2rem,6vw,4rem)}
+.hero p{font-size:1.12em;margin:0 0 1rem}
+.hero .way{font-family:Fraunces,serif;font-size:1.5em;line-height:1.25;margin:1.4rem 0;padding-left:1rem;border-left:2px solid var(--mark)}
+.hero .next{color:var(--soft);font-size:1em;border-top:1px solid var(--rule);padding-top:1rem;margin-top:1.5rem}
 section{display:grid;grid-template-columns:minmax(7rem,11rem) 1fr;gap:1rem 2.5rem;padding:2.25rem 0;border-top:1px solid var(--rule)}
 h2{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.35rem 0 0}
 section>div{max-width:42rem;min-width:0}
-h3{font-size:1.3em;line-height:1.2;margin:1.6rem 0 .5rem}
-h3:first-child{margin-top:0}
+h3{font-size:1.3em;line-height:1.2;margin:1.8rem 0 .6rem}
 p{margin:0 0 1rem}
 a{color:inherit;text-decoration-color:var(--mark);text-decoration-thickness:1.5px;text-underline-offset:.2em}
 a:hover{color:var(--mark)} a:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
-ul,ol{margin:0;padding:0;list-style:none}
-.when{color:var(--mark);font-size:.78em;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .25rem}
-.steps{margin:0 0 1.25rem}
-.steps li{display:grid;grid-template-columns:1fr 1fr;gap:.25rem 1.75rem;padding:1rem 0;border-top:1px solid var(--rule)}
-.steps li:first-child{border-top:0;padding-top:0}
-.steps p{margin:0}
-.steps div:first-child .when{color:var(--ink)}
+ul{margin:0;padding:0;list-style:none}
+.proj li{padding:.85rem 0;border-top:1px solid var(--rule)}
+.proj li:first-child{border-top:0;padding-top:0}
+.proj b{font-weight:600}
+.proj p{margin:0}
+.why{color:var(--soft)}
+.why::before{content:"Why. ";color:var(--mark);font-weight:600;font-size:.78em;letter-spacing:.08em;text-transform:uppercase}
 .list li{padding-left:1.1rem;position:relative;margin-bottom:.4rem}
 .list li::before{content:"";position:absolute;left:0;top:.72em;width:.45rem;height:1px;background:var(--mark)}
 .list b{font-weight:600}
@@ -52,181 +53,110 @@ ul,ol{margin:0;padding:0;list-style:none}
 .big{font-size:clamp(1.8rem,1.2rem + 3vw,3.1rem);line-height:1.05;margin:0 0 1rem}
 .yr{color:var(--soft);font-variant-numeric:tabular-nums;white-space:nowrap}
 .soft{color:var(--soft)}
-.guide{max-width:40rem;margin:0 0 clamp(2rem,6vw,4rem)}
-.guide ol{border-top:1px solid var(--rule)}
-.guide li{display:grid;grid-template-columns:11rem 1fr;gap:.2rem 1rem;padding:.55rem 0;border-bottom:1px solid var(--rule)}
-.guide a{font-weight:600}.guide span{color:var(--soft)}
-@media (max-width:40rem){.guide li{grid-template-columns:1fr}}
-.sub{font-weight:600;margin:1rem 0 .4rem}
 footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);font-size:.92em}
-@media (max-width:40rem){section{grid-template-columns:1fr;gap:.6rem}.steps li{grid-template-columns:1fr;gap:.7rem}}
+@media (max-width:40rem){section{grid-template-columns:1fr;gap:.6rem}}
 </style>
 </head>
 <body>
 <nav><div>
-<a href="#top">Pritesh Patel</a><a href="#agents">Agent control</a><a href="#pattern">Story</a><a href="#built">Projects</a><a href="#research">Research</a><a href="#career">Career</a>
+<a href="#top">Pritesh Patel</a><a href="#truth">AI truth</a><a href="#tinkering">Projects</a><a href="#career">Career</a><a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a>
 </div></nav>
 <main id="top">
 
 <div class="hero">
 <h1>I build it first. Then I build the <em>team.</em></h1>
-<p class="lede">I am Pritesh Patel. For twenty years I have walked into messy problems and left working products behind.</p>
-<p class="lede">Colleagues call me an organizer of chaos. I find the root cause before I pick a tool, and I sit with the people doing the work until the solution fits their real day, whether they run a Fortune 100 division or a family restaurant.</p>
-<p class="lede">It started with search. I built the engines behind CNN and the NBA. It grew into decisions worth billions: at Walmart, products I led lifted e-commerce in-stock by $10B. Along the way I kept changing seats on purpose, from writing the code, to running the team, to asking whether any of it was working.</p>
-<p class="lede">I also started three companies that did not make it, and learned more from them than from the wins. What I kept from all of it is a habit: do the work myself first, then build the team around it.</p>
-<p class="lede">Now I am pointing that habit at the question I think matters most. When an AI agent says the job is done, how do we know?</p>
+<p>I am Pritesh Patel. For over twenty years I have walked into messy problems and left behind working products, and the operations and teams that keep the problem from coming back. Colleagues call me an organizer of chaos.</p>
+<p>I have also started four companies: three product companies and one consulting practice. The consulting practice lasted. The product companies taught me things I use every day.</p>
+<p class="way">Find the hidden truth behind the problem, solve it myself, then build the team around it.</p>
+<p>I have a deep view of every part of building an AI or technology product. Most of my experience is in companies that were not digital first, where software served another line of business. There I built software, then software teams. Built products, then product teams. Built data science models, then data science teams. Built AI products, then an AI team. I have been a player and a coach on every team I have managed.</p>
+<p class="next">Below are personal projects from outside of work. For my work, see <a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a>. My latest obsession is <a href="#truth">keeping AI telling the truth</a>, so those projects and their code come first. After them are <a href="#tinkering">a few things I have tinkered with</a> over the years on my own time.</p>
 </div>
 
-<div class="guide">
-<p class="when">On this page</p>
-<p>This site shows what I have done, what I build on my own time, and the problem I am working on now.</p>
-<ol>
-<li><a href="#agents">Latest obsession</a><span>Checking whether AI agents did what they say. With code.</span></li>
-<li><a href="#pattern">The story</a><span>Four crafts, each learned hands-on and then led, and why they add up to a company.</span></li>
-<li><a href="#built">What I build</a><span>Projects, newest first, back to three restaurant startups.</span></li>
-<li><a href="#research">Research</a><span>Three papers and my education.</span></li>
-<li><a href="#career">Career</a><span>Every role, in one line each.</span></li>
-</ol>
-</div>
-
-<section id="agents" class="focus">
+<section id="truth" class="focus">
 <h2>Latest obsession</h2>
 <div>
-<p class="big">The agent says it is done. <em>Is it?</em></p>
-<p>Most of what I build now, I build with AI agents. They kept telling me work was finished when it was not. So I stopped reading their reports and started demanding evidence a program can check: a command, its exit code, a trace the agent did not write.</p>
-<ul class="list">
-<li><b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>.</b> A CLI that will not mark an agent's work complete without command-backed test evidence. 189 tests.</li>
-<li><b><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>.</b> Scores a deliverable and its trace by counting evidence. No model grades the output.</li>
-<li><b><a href="https://github.com/priteshpatel15/dev-command-library">dev-command-library</a>.</b> Keeps a coding agent to small changes, each one checked before the next.</li>
-<li><b>A product harness.</b> Compiles a product spec into contracts and review lanes an agent must pass.</li>
+<p class="big">Keeping AI telling the <em>truth.</em></p>
+<p>I build with AI agents every day. They tell me work is finished when it is not. So I stopped reading their reports and started demanding evidence a program can check: a command, its exit code, a trace the agent did not write.</p>
+<ul class="proj">
+<li><p><b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>.</b> A command-line tool that makes a coding agent write the spec first, show a failing test, then a passing one. It refuses to mark work complete without that proof.</p>
+<p class="why">Agents skip steps when nothing checks them. Asking nicely did not work.</p></li>
+<li><p><b><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>.</b> A scorer for what an agent delivers and the record of how it got there. It counts evidence. If a report says "all tests pass" and no test ran, it fails.</p>
+<p class="why">Asking a second model to grade the first only moves the trust problem.</p></li>
+<li><p><b><a href="https://github.com/priteshpatel15/dev-command-library">dev-command-library</a>.</b> A set of commands that takes an agent from design to a finished change, one small step at a time, with a size limit on each step.</p>
+<p class="why">Big changes are where agents drift and where false claims hide.</p></li>
 </ul>
-<p style="margin-top:1rem">This works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
+<p style="margin-top:1.25rem">This works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
 </div>
 </section>
 
-<section id="pattern">
-<h2>The story</h2>
+<section id="tinkering">
+<h2>Tinkering</h2>
 <div>
-<p class="big">Most technical founders are missing a piece.</p>
-<p>The engineer cannot sell. The product person cannot build. The data scientist ships a model nobody uses. I spent twenty years closing those gaps, one at a time.</p>
-<p><b>I started as an engineer.</b> At Turner I architected search for CNN, the NBA, TBS and TNT. I learned what software has to survive when millions of people use it.</p>
-<p><b>Then I wanted to know why we were building it.</b> At GE I became a product manager, revived a failing search and machine-learning effort, and was made a director. I pitched a new data product, won $8M to build it, and it returned $50M.</p>
-<p><b>Then I wanted proof.</b> I went back to the keyboard as a principal data scientist. My pricing models added $16M in revenue. My document models became published research. At Walmart I led products that lifted in-stock by $10B and automated $50M of ordering a week.</p>
-<p><b>Then AI changed what a small team can do.</b> At Fisher Phillips I built three AI products myself, hired a team of four, and now run more than 25 agents for 800 lawyers.</p>
-<p>Every time, I did the work first and led the team second. I never stopped doing the work.</p>
-<p><b>And I have failed at the part that matters most.</b> I started three restaurant-technology companies and ran pilots with five customers. None found traction. Those three taught me more about customers than any success did.</p>
-<p>So I know what to build, how to build it, how to tell whether it is working, how to do it with a handful of people, how to hire those people, and what it sounds like when a customer says no. That is the whole job of starting a technology company. I have done every part of it.</p>
+<p>A select few. Each one started as a problem I had. Linked ones are public.</p>
 
-<p class="sub" style="margin-top:2rem">The pattern at a glance, newest first</p>
-<ol class="steps">
-<li><div><p class="when">AI engineer</p><p>Personally built three AI products at Fisher Phillips, including a litigation agent 50 attorneys use.</p></div>
-<div><p class="when">Then led</p><p>Hired the firm's AI team. Together we run more than 25 agents for 800 lawyers.</p></div></li>
-<li><div><p class="when">Data scientist</p><p>Back at the keyboard at GE: pricing models worth $16M and document models that became published research.</p></div>
-<div><p class="when">Then led</p><p>Five data scientists at Better.com, taking the team from two products to eight.</p></div></li>
-<li><div><p class="when">Product manager</p><p>Revived GE's struggling search and machine-learning efforts as a senior product manager.</p></div>
-<div><p class="when">Then led</p><p>As director, grew the group from two people to 15 and took eight of 22 prototypes into production.</p></div></li>
-<li><div><p class="when">Software architect</p><p>Architected search for CNN, NBA, TBS and TNT at Turner, and the backend of its Emmy-winning companion apps.</p></div>
-<div><p class="when">Then led</p><p>Client teams at Avalon, including a Wells Fargo search over 1.5 billion documents.</p></div></li>
-</ol>
-<h3>Why four crafts make a whole company</h3>
-<p>A business needs someone to answer four questions. Most founders can answer one or two and must hire for the rest. I have done each job myself and led a team in it.</p>
-<ul class="list">
-<li><b>Product management: what should we build, and for whom?</b> I find the real problem before picking a solution, and I have won funding on that case.</li>
-<li><b>Software architecture: will it hold up?</b> I design systems that survive real traffic, from search across Turner's networks to a firm's AI platform.</li>
-<li><b>Data science: is it working?</b> I measure outcomes and build the models that move them. I do not ship on instinct.</li>
-<li><b>AI engineering: how far can a small team go?</b> I build with agents and know where they fail, so a few people can do the work of many.</li>
-</ul>
-<p style="margin-top:1rem">Leading a team in all four taught me the fifth skill: hiring and growing the people who do each one. Running my own consulting practice and three startups taught me the sixth: finding customers and hearing no. Put together, I can take a company from the first conversation with a customer to a product in production, and know which parts I am getting wrong.</p>
-<p class="soft">In between, at Walmart, I led products that lifted e-commerce in-stock by $10B.</p>
-</div>
-</section>
-
-<section id="built">
-<h2>What I build</h2>
-<div>
-<p>Most of this started as a problem I had. Newest first. Linked projects are public. The rest are described here.</p>
-
-<h3>At Fisher Phillips</h3>
-<ul class="list">
-<li><b>A litigation workflow agent</b> used by 50 attorneys, with a time-entry appeals agent.</li>
-<li><b>A wage-and-hour audit product</b> that reads payroll documents for client audits.</li>
-<li><b>Website privacy and cookie scanning</b> offered to clients as a compliance service.</li>
-<li><b>AI-driven enterprise search,</b> replacing the firm's legacy search and serving its research agents.</li>
-</ul>
-
-<h3>Money and personal operations</h3>
-<ul class="list">
-<li><b><a href="https://github.com/priteshpatel15/personal-finance-agent">personal-finance-agent</a>.</b> A budget pipeline that runs on your own machine and keeps your spreadsheet in charge. 101 tests.</li>
-<li><b>A live budget on my phone.</b> Bank exports normalized into a shared sheet, with categories that learn from my corrections.</li>
-<li><b>A priority board run by an agent.</b> It sorts my week by energy and deadline, then does the tasks it can.</li>
-<li><b>Paper mail and receipts.</b> Scanned mail sorted into actions, and email receipts turned into expense-ready proof.</li>
-</ul>
-
-<h3>Voice</h3>
-<ul class="list">
-<li><b><a href="https://github.com/priteshpatel15/ai-debate-simulator">ai-debate-simulator</a>.</b> Practice a debate out loud. An AI candidate rebuts you in its own voice.</li>
-<li><b>A live radio announcer for fantasy football.</b> Play-by-play events become spoken calls over a crowd that reacts.</li>
+<h3>Money and time</h3>
+<ul class="proj">
+<li><p><b><a href="https://github.com/priteshpatel15/personal-finance-agent">personal-finance-agent</a>.</b> A budget pipeline that runs on my own machine. It pulls transactions, removes card payments and transfers so nothing is counted twice, and fills a review workbook.</p>
+<p class="why">Budget apps want my bank login and replace the spreadsheet I trust.</p></li>
+<li><p><b>A live budget on my phone.</b> Bank exports land in a shared sheet, and categories learn from my corrections.</p>
+<p class="why">I wanted to see this month's spending without opening five bank sites.</p></li>
+<li><p><b>A priority board run by an agent.</b> It sorts my week by energy and deadline, then does the tasks it can.</p>
+<p class="why">My best thinking hours kept going to small tasks.</p></li>
+<li><p><b>Paper mail and receipts.</b> Scanned mail is sorted into actions. Email receipts become proof an accountant will accept.</p>
+<p class="why">The pile on the counter was not going to read itself.</p></li>
 </ul>
 
 <h3>Data and documents</h3>
-<ul class="list">
-<li><b><a href="https://github.com/priteshpatel15/curex">curex</a>.</b> Ask a dataset questions in plain English. A model writes the code and a restricted executor runs it.</li>
-<li><b>A scanned Gujarati book, back into text.</b> Page-by-page transcription with a vision model where standard tools failed.</li>
-<li><b>A Civil War regimental roster</b> turned from a scanned volume into a searchable table.</li>
-<li><b>Slides from a prompt or a document.</b> A model plans the story and a renderer builds the deck.</li>
+<ul class="proj">
+<li><p><b><a href="https://github.com/priteshpatel15/curex">curex</a>.</b> Ask a spreadsheet questions in plain English. A model writes the analysis code and a restricted runner executes it.</p>
+<p class="why">Exploring data is the same dozen steps every time.</p></li>
+<li><p><b>A scanned Gujarati book, back into text.</b> A vision model transcribes it page by page into a Word document.</p>
+<p class="why">Standard tools could not read the script.</p></li>
+<li><p><b>A Civil War regimental roster.</b> A scanned volume of soldiers' records turned into a table.</p>
+<p class="why">So the names could be searched and sorted.</p></li>
+<li><p><b>Slides from a prompt or a document.</b> A model plans the story and a renderer builds the deck.</p>
+<p class="why">The first draft of a deck is the slowest part.</p></li>
 </ul>
 
 <h3>Research and simulation</h3>
-<ul class="list">
-<li><b>Customer research, automated.</b> Four agents run a Jobs-to-be-Done study end to end, with a fine-tuned model compared against a frontier one.</li>
-<li><b>Why shelves go empty.</b> Bayesian networks that model the causes of retail out-of-stocks.</li>
-<li><b>A trucking world generator.</b> Synthetic trucks, drivers and loads placed by census data, for dispatch research.</li>
-<li><b>A GPU toolkit for large optimization problems.</b> Linear-program and subgradient solvers in CUDA.</li>
+<ul class="proj">
+<li><p><b>Customer research, automated.</b> Four agents run a Jobs-to-be-Done study from scoping to strategy.</p>
+<p class="why">Good customer research is slow and expensive, so most teams skip it.</p></li>
+<li><p><b>A trucking world generator.</b> Synthetic trucks, drivers and loads placed where people actually live.</p>
+<p class="why">Dispatch ideas need realistic data to test against.</p></li>
+<li><p><b>A GPU toolkit for large optimization problems.</b> Solvers for routing, scheduling and staffing problems too big for a laptop.</p>
+<p class="why">I wanted to know how far one graphics card could go.</p></li>
+<li><p><b>A live radio announcer for fantasy football.</b> Game events become spoken play-by-play over a crowd that reacts.</p>
+<p class="why">For fun.</p></li>
 </ul>
 
 <h3>Restaurant technology</h3>
-<p>I have more than ten years of experience running a family restaurant business. I keep trying to fix its problems with software.</p>
-<ul class="list">
-<li><b>Automated books for a frozen-yogurt franchise.</b> Bank, payroll, point-of-sale, delivery and supplier exports in. A finished profit-and-loss statement out.</li>
-<li><b>Item-level demand forecasting.</b> Weather, local events and nearby businesses as signals, backtested against sales history.</li>
-<li><b>A phone app for the operator.</b> Decisions, money, schedule and a spoken morning briefing.</li>
+<p>I have more than ten years of experience in a family restaurant business. I keep trying to fix its problems with software.</p>
+<ul class="proj">
+<li><p><b>Automated books for a frozen-yogurt shop.</b> Bank, payroll, register, delivery and supplier files go in. A finished profit-and-loss statement comes out.</p>
+<p class="why">The owner should not need an accountant to know if last month made money.</p></li>
+<li><p><b>Item-level demand forecasting.</b> Predicts what will sell each day from weather, local events and what is nearby.</p>
+<p class="why">Over-ordering is waste and under-ordering is lost sales.</p></li>
+<li><p><b>Streakss, StreetRoll and MenuSales.ai.</b> Three startups: guest rewards, food-truck location prediction, and an AI menu assistant.</p>
+<p class="why">I thought restaurants would pay for these. I ran pilots with five customers and tested thoroughly. They did not get traction, and I learned a great deal.</p></li>
 </ul>
-<p class="sub">Three startups, 2019 to 2022</p>
-<ul class="list">
-<li><b>Streakss.</b> Rewards that bring guests back more often.</li>
-<li><b>StreetRoll.</b> Predicts where a food truck will earn the most, from mobility and demand data.</li>
-<li><b>MenuSales.ai.</b> An AI assistant on a restaurant's website that sells and upsells from the menu.</li>
-</ul>
-<p style="margin-top:.8rem">I ran pilots with five customers and tested thoroughly. The products did not get traction, so I stopped. I learned a great deal from all three.</p>
-</div>
-</section>
-
-<section id="research">
-<h2>Research</h2>
-<div>
-<ul class="list">
-<li><b>DoT-Net: Document Layout Classification Using Texture-based CNN.</b> ICDAR 2019. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>, <a href="https://github.com/datax-lab/DoTNet">code</a>.</li>
-<li><b>Table of Contents Recognition in OCR Documents Using Image-based Machine Learning.</b> ACM Southeast 2019. Student Best Paper Award. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</li>
-<li><b>Visual Analytics for Converging-Business-Ecosystem Intelligence.</b> IEEE CG&amp;A 2012. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</li>
-</ul>
-<p class="soft" style="margin-top:1rem">MS and BS in Computer Science, Georgia Institute of Technology, in artificial intelligence and cryptography. National Science Foundation Fellowship. Doctoral study in Human-Centered Computing, not completed.</p>
 </div>
 </section>
 
 <section id="career">
-<h2>Career</h2>
+<h2>Career in brief</h2>
 <div>
 <ul class="list">
-<li><span class="yr">2025 to now.</span> <b>Director of AI, Fisher Phillips.</b> Built the AI team and the products 800 lawyers use daily. Advise the Chairman weekly.</li>
-<li><span class="yr">2021 to 2025.</span> <b>Associate Director of Product Management, ML and Analytics Automation, Walmart.</b> $10B in-stock lift. $50M of ordering automated each week.</li>
-<li><span class="yr">2021.</span> <b>Data Science Manager, Better.com.</b></li>
-<li><span class="yr">2015 to 2021.</span> <b>General Electric.</b> Senior product manager, twice a director of product management, then principal data scientist. Won $8M to build a data product that returned $50M in productivity.</li>
-<li><span class="yr">2014 to 2015.</span> <b>Principal Consultant, Search and ML, Avalon Consulting.</b></li>
-<li><span class="yr">2011 to 2014.</span> <b>Senior Software Engineer, Search, Turner Broadcasting.</b></li>
-<li><span class="yr">2005 to 2008.</span> <b>HP Autonomy and UPS.</b> Search implementations for banks and media companies. Quantitative analyst and lead engineer.</li>
-<li><span class="yr">2008 to now.</span> <b>Founder, Concinnous Solutions.</b> Search and ML consulting for Costco, Turner, the American Medical Association and others.</li>
+<li><span class="yr">2025 to now.</span> <b>Director of AI,</b> Fisher Phillips.</li>
+<li><span class="yr">2021 to 2025.</span> <b>Associate Director of Product Management, ML and Analytics Automation,</b> Walmart.</li>
+<li><span class="yr">2021.</span> <b>Data Science Manager,</b> Better.com.</li>
+<li><span class="yr">2015 to 2021.</span> <b>Product management director, then principal data scientist,</b> General Electric.</li>
+<li><span class="yr">2014 to 2015.</span> <b>Principal Consultant, Search and ML,</b> Avalon Consulting.</li>
+<li><span class="yr">2011 to 2014.</span> <b>Senior Software Engineer, Search,</b> Turner Broadcasting.</li>
+<li><span class="yr">2008 to now.</span> <b>Founder,</b> Concinnous Solutions.</li>
 </ul>
-<p class="soft" style="margin-top:1rem">I also teach. My DataCamp course, Concepts of Computer Science, has nearly 1,000 learners. Walmart Making the Difference Award, 2023. GE Impact Awards.</p>
+<p style="margin-top:1rem">MS and BS in Computer Science from Georgia Tech. Three peer-reviewed papers.</p>
+<p>For the work itself, the research and the full history, see <a href="https://www.linkedin.com/in/pritesh-p/">my LinkedIn profile</a>.</p>
 </div>
 </section>
 
