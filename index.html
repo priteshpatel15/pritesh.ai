@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pritesh Patel</title>
+<meta name="description" content="Pritesh Patel builds tools that check whether AI agents did what they say they did.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:oklch(96.5% 0.012 85); --ink:oklch(24% 0.02 60); --soft:oklch(46% 0.02 60);
+  --rule:oklch(84% 0.02 80); --mark:oklch(52% 0.16 30);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(20% 0.012 60); --ink:oklch(92% 0.012 85); --soft:oklch(72% 0.015 80);
+  --rule:oklch(34% 0.015 60); --mark:oklch(74% 0.13 40);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 clamp(1rem,.95rem + .25vw,1.125rem)/1.6 "Public Sans",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:62rem;margin:0 auto;padding:clamp(2.5rem,8vw,6rem) clamp(1rem,5vw,3rem) 4rem}
+h1,h2,.claim{font-family:Fraunces,serif;font-weight:400;text-wrap:balance}
+h1{font-size:clamp(2.4rem,1.4rem + 5vw,5rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 1.5rem;max-width:14ch}
+h1 em{font-style:italic;color:var(--mark)}
+.lede{max-width:38rem;font-size:1.15em;margin:0 0 clamp(3rem,8vw,6rem)}
+section{display:grid;grid-template-columns:minmax(7rem,11rem) 1fr;gap:1rem 2.5rem;padding:2rem 0;border-top:1px solid var(--rule)}
+h2{font-size:.8rem;font-family:"Public Sans",sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.35rem 0 0}
+section>div{max-width:40rem}
+p{margin:0 0 1rem}
+a{color:inherit;text-decoration-color:var(--mark);text-decoration-thickness:1.5px;text-underline-offset:.2em}
+a:hover{color:var(--mark)}
+a:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
+.ledger{list-style:none;margin:0;padding:0}
+.ledger li{padding:0 0 1.75rem}
+.claim{font-size:1.45em;line-height:1.2;margin:0 0 .35rem}
+.ev{color:var(--soft);font-size:.92em;margin:0}
+.ev b{font-weight:600;color:var(--mark);letter-spacing:.08em;text-transform:uppercase;font-size:.78em;margin-right:.5em}
+dl{margin:0;display:grid;grid-template-columns:8.5rem 1fr;gap:.5rem 1rem}
+dt{color:var(--soft);font-variant-numeric:tabular-nums}
+dd{margin:0}
+footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);font-size:.92em}
+@media (max-width:40rem){section{grid-template-columns:1fr;gap:.5rem}dl{grid-template-columns:1fr;gap:0}dd{margin-bottom:.75rem}}
+</style>
+</head>
+<body>
+<main>
+<h1>The agent says it is done. <em>Is it?</em></h1>
+<p class="lede">I am Pritesh Patel. I build tools that check whether AI agents did what they say they did. I want to work on that problem as research: how to keep oversight of systems that are more capable than the person reviewing them.</p>
+
+<section>
+<h2>The question</h2>
+<div>
+<p>Coding agents report success when nothing ran. I kept hitting this while building with coding agents, so I stopped reading agent reports and started demanding evidence a program can check: a command, its exit code, a trace event the agent did not write.</p>
+<p>That works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
+</div>
+</section>
+
+<section>
+<h2>Work</h2>
+<ul class="ledger">
+<li><p class="claim">A CLI that will not mark work complete without command-backed evidence.</p>
+<p class="ev"><b>Evidence</b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>. Spec first, red/green tests, Playwright proof, all saved as files. TypeScript.</p></li>
+<li><p class="claim">A scorer that grades a deliverable and its trace by counting evidence, not by asking a model.</p>
+<p class="ev"><b>Evidence</b><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>. "All tests pass" with no test event fails a gate. Python, no dependencies.</p></li>
+<li><p class="claim">Plain-English questions over data, with model-written code run in a restricted executor.</p>
+<p class="ev"><b>Evidence</b><a href="https://github.com/priteshpatel15/curex">curex</a>. Python.</p></li>
+</ul>
+</section>
+
+<section>
+<h2>Background</h2>
+<dl>
+<dt>2025 to now</dt><dd>Director of AI, Fisher Phillips. Built and deployed internal AI products used daily by more than 800 lawyers.</dd>
+<dt>2021 to 2025</dt><dd>Director of Product Management, AI/ML and Search, Walmart Labs.</dd>
+<dt>2015 to 2021</dt><dd>General Electric. Principal Data Scientist, LLM and Optimization. Applied language models to legal contracts, which led to published research and a best-paper award.</dd>
+<dt>2011 to 2014</dt><dd>Senior Software Engineer, Search, Turner Broadcasting.</dd>
+<dt>Education</dt><dd>MS and BS in Computer Science, Georgia Institute of Technology. Specialized in artificial intelligence and cryptography. Doctoral study in Human-Centered Computing, not completed.</dd>
+</dl>
+</section>
+
+<footer>
+<a href="https://github.com/priteshpatel15">GitHub</a> · <a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a> · Atlanta, GA
+</footer>
+</main>
+</body>
+</html>
