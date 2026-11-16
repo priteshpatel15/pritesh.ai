@@ -4,96 +4,255 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pritesh Patel</title>
-<meta name="description" content="Pritesh Patel builds tools that check whether AI agents did what they say they did.">
+<meta name="description" content="Pritesh Patel. Computer scientist, product leader and AI researcher. Twenty years of building search, data science and AI products at GE, Walmart, Turner and Fisher Phillips.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:oklch(96.5% 0.012 85); --ink:oklch(24% 0.02 60); --soft:oklch(46% 0.02 60);
-  --rule:oklch(84% 0.02 80); --mark:oklch(52% 0.16 30);
+  --rule:oklch(84% 0.02 80); --mark:oklch(52% 0.16 30); --wash:oklch(93% 0.018 85);
 }
 @media (prefers-color-scheme:dark){:root{
   --paper:oklch(20% 0.012 60); --ink:oklch(92% 0.012 85); --soft:oklch(72% 0.015 80);
-  --rule:oklch(34% 0.015 60); --mark:oklch(74% 0.13 40);
+  --rule:oklch(34% 0.015 60); --mark:oklch(74% 0.13 40); --wash:oklch(24% 0.014 60);
 }}
 *{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 clamp(1rem,.95rem + .25vw,1.125rem)/1.6 "Public Sans",sans-serif;-webkit-font-smoothing:antialiased}
-main{max-width:62rem;margin:0 auto;padding:clamp(2.5rem,8vw,6rem) clamp(1rem,5vw,3rem) 4rem}
-h1,h2,.claim{font-family:Fraunces,serif;font-weight:400;text-wrap:balance}
-h1{font-size:clamp(2.4rem,1.4rem + 5vw,5rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 1.5rem;max-width:14ch}
-h1 em{font-style:italic;color:var(--mark)}
-.lede{max-width:38rem;font-size:1.15em;margin:0 0 clamp(3rem,8vw,6rem)}
-section{display:grid;grid-template-columns:minmax(7rem,11rem) 1fr;gap:1rem 2.5rem;padding:2rem 0;border-top:1px solid var(--rule)}
-h2{font-size:.8rem;font-family:"Public Sans",sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.35rem 0 0}
-section>div{max-width:40rem}
+nav{position:sticky;top:0;z-index:1;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav div{max-width:62rem;margin:0 auto;padding:.7rem clamp(1rem,5vw,3rem);display:flex;gap:1.4rem;overflow-x:auto;font-size:.85rem;white-space:nowrap}
+nav a{text-decoration:none;color:var(--soft)} nav a:first-child{color:var(--ink);font-weight:600;margin-right:auto}
+main{max-width:62rem;margin:0 auto;padding:clamp(2.5rem,8vw,5.5rem) clamp(1rem,5vw,3rem) 4rem}
+h1,h3,.fig{font-family:Fraunces,serif;font-weight:400;text-wrap:balance}
+h1{font-size:clamp(2.4rem,1.4rem + 5vw,5rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 1.5rem;max-width:15ch}
+em{font-style:italic;color:var(--mark)}
+.lede{max-width:40rem;font-size:1.15em;margin:0 0 1rem}
+.hero{margin-bottom:clamp(2.5rem,7vw,5rem)}
+section{display:grid;grid-template-columns:minmax(7rem,11rem) 1fr;gap:1rem 2.5rem;padding:2.25rem 0;border-top:1px solid var(--rule)}
+h2{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.35rem 0 0}
+section>div{max-width:42rem;min-width:0}
+h3{font-size:1.45em;line-height:1.2;margin:0 0 .35rem}
 p{margin:0 0 1rem}
 a{color:inherit;text-decoration-color:var(--mark);text-decoration-thickness:1.5px;text-underline-offset:.2em}
-a:hover{color:var(--mark)}
-a:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
-.ledger{list-style:none;margin:0;padding:0}
-.ledger li{padding:0 0 1.75rem}
-.claim{font-size:1.45em;line-height:1.2;margin:0 0 .35rem}
-.ev{color:var(--soft);font-size:.92em;margin:0}
-.ev b{font-weight:600;color:var(--mark);letter-spacing:.08em;text-transform:uppercase;font-size:.78em;margin-right:.5em}
-dl{margin:0;display:grid;grid-template-columns:8.5rem 1fr;gap:.5rem 1rem}
-dt{color:var(--soft);font-variant-numeric:tabular-nums}
-dd{margin:0}
+a:hover{color:var(--mark)} a:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
+ul{margin:0;padding:0;list-style:none}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));gap:1.75rem 2rem}
+.fig{font-size:clamp(2rem,1.5rem + 2vw,2.9rem);line-height:1;display:block;margin-bottom:.4rem}
+.figs p{margin:0;color:var(--soft);font-size:.95em}
+.role{padding-bottom:1.9rem}
+.when{color:var(--mark);font-size:.78em;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .2rem}
+.org{color:var(--soft);margin:0 0 .5rem}
+.role li,.plain li{padding-left:1.1rem;position:relative;margin-bottom:.35rem}
+.role li::before,.plain li::before{content:"";position:absolute;left:0;top:.72em;width:.45rem;height:1px;background:var(--mark)}
+.sub{font-weight:600;margin:.9rem 0 .3rem}
+.focus{background:var(--wash);margin:0 calc(-1*clamp(1rem,5vw,3rem));padding-inline:clamp(1rem,5vw,3rem)}
+.focus .big{font-family:Fraunces,serif;font-size:clamp(1.8rem,1.2rem + 3vw,3.1rem);line-height:1.05;margin:0 0 1rem}
+.item{padding-bottom:1.5rem}
+.ev{color:var(--soft);font-size:.94em;margin:0}
+.tag{font-weight:600;color:var(--mark);letter-spacing:.08em;text-transform:uppercase;font-size:.78em;margin-right:.5em}
 footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);font-size:.92em}
-@media (max-width:40rem){section{grid-template-columns:1fr;gap:.5rem}dl{grid-template-columns:1fr;gap:0}dd{margin-bottom:.75rem}}
+@media (max-width:40rem){section{grid-template-columns:1fr;gap:.6rem}}
 </style>
 </head>
 <body>
-<main>
-<h1>The agent says it is done. <em>Is it?</em></h1>
-<p class="lede">I am Pritesh Patel. I build tools that check whether AI agents did what they say they did. I want to work on that problem as research: how to keep oversight of systems that are more capable than the person reviewing them.</p>
+<nav><div>
+<a href="#top">Pritesh Patel</a><a href="#results">Results</a><a href="#career">Career</a><a href="#agents">Agent control</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+</div></nav>
+<main id="top">
 
-<section>
-<h2>The question</h2>
-<div>
-<p>Coding agents report success when nothing ran. I kept hitting this while building with coding agents, so I stopped reading agent reports and started demanding evidence a program can check: a command, its exit code, a trace event the agent did not write.</p>
-<p>That works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
+<div class="hero">
+<h1>I turn ambiguity into things that <em>ship.</em></h1>
+<p class="lede">I am Pritesh Patel: computer scientist, product leader and AI researcher. For twenty years I have built search, data science and AI products, as an engineer, a data scientist, a product director and a founder.</p>
+<p class="lede">I am Director of AI at Fisher Phillips, where I built the firm's AI team and the products more than 800 lawyers use every day.</p>
+</div>
+
+<section id="results">
+<h2>Results</h2>
+<div class="figs">
+<div><span class="fig">$10B</span><p>boost to e-commerce in-stock at Walmart, with more than $50M of ordering automated each week.</p></div>
+<div><span class="fig">$16M</span><p>in added revenue from pricing optimization models at GE.</p></div>
+<div><span class="fig">$50M</span><p>in productivity gains from a GE analytics product I pitched and won $8M to build.</p></div>
+<div><span class="fig">800+</span><p>lawyers using AI products my team built at Fisher Phillips, with more than 25 agents deployed.</p></div>
+<div><span class="fig">2 to 15</span><p>the GE data science team I grew and led, delivering more than 22 prototypes with eight in production.</p></div>
+<div><span class="fig">3</span><p>peer-reviewed papers, one with a Student Best Paper Award.</p></div>
 </div>
 </section>
 
-<section>
-<h2>Work</h2>
-<ul class="ledger">
-<li><p class="claim">A CLI that will not mark work complete without command-backed evidence.</p>
-<p class="ev"><b>Evidence</b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>. Spec first, red/green tests, Playwright proof, all saved as files. TypeScript.</p></li>
-<li><p class="claim">A scorer that grades a deliverable and its trace by counting evidence, not by asking a model.</p>
-<p class="ev"><b>Evidence</b><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>. "All tests pass" with no test event fails a gate. Python, no dependencies.</p></li>
-<li><p class="claim">Plain-English questions over data, with model-written code run in a restricted executor.</p>
-<p class="ev"><b>Evidence</b><a href="https://github.com/priteshpatel15/curex">curex</a>. Python.</p></li>
+<section id="how">
+<h2>How I work</h2>
+<div>
+<p>I find the root cause before I pick a tool. A language model, a search index and a whiteboard are all means to an end.</p>
+<ul class="plain">
+<li><strong>Hands on.</strong> I still write Python, build prototypes and deploy agents. I embed with the people doing the work and build for what they actually do.</li>
+<li><strong>Teams.</strong> I hire, mentor and grow people. Four at Fisher Phillips including PhDs, fifteen at GE, more than thirty consultants at Avalon.</li>
+<li><strong>Trust.</strong> I advise executives and operators alike, from a law firm chairman to a restaurant owner, and bring skeptics along with evidence.</li>
 </ul>
+</div>
 </section>
 
-<section>
-<h2>Papers</h2>
-<ul class="ledger">
-<li><p class="claim">DoT-Net: Document Layout Classification Using Texture-based CNN</p>
-<p class="ev"><b>ICDAR 2019</b>Kosaraju, Masum, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>. <a href="https://github.com/datax-lab/DoTNet">Code</a>.</p></li>
-<li><p class="claim">Table of Contents Recognition in OCR Documents Using Image-based Machine Learning</p>
-<p class="ev"><b>ACM Southeast 2019</b>Student Best Paper Award. Kosaraju, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</p></li>
-<li><p class="claim">Visual Analytics for Converging-Business-Ecosystem Intelligence</p>
-<p class="ev"><b>IEEE CG&amp;A 2012</b>Basole, Hu, Patel, Stasko. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</p></li>
+<section id="career">
+<h2>Career</h2>
+<div>
+
+<div class="role">
+<p class="when">2025 to now</p>
+<h3>Director of AI</h3>
+<p class="org">Fisher Phillips, a national labor and employment law firm</p>
+<ul>
+<li>Hired and mentored a four-person AI team and created the firm's AI software development lifecycle.</li>
+<li>Deployed internal AI products that support more than 800 lawyers daily, and more than 25 agents with the team.</li>
+<li>Personally built three compliance products for attorneys and clients, including a litigation workflow agent used by 50 attorneys and a wage-and-hour audit product.</li>
+<li>Advise the Chairman weekly and lead the AI Committee. Serve as a strategic AI advisor to some of the firm's largest clients.</li>
 </ul>
+</div>
+
+<div class="role">
+<p class="when">2021 to 2025</p>
+<h3>Associate Director of Product Management, ML and Analytics Automation</h3>
+<p class="org">Walmart</p>
+<ul>
+<li>Built toward a self-healing supply chain. Boosted in-stock by $10B in e-commerce.</li>
+<li>Automated more than $50M of ordering a week, with products processing over a billion rows a day.</li>
+<li>Thousands of internal expert users adopted the tools. Earned an award approved by the CTO.</li>
+</ul>
+</div>
+
+<div class="role">
+<p class="when">2021</p>
+<h3>Data Science Manager</h3>
+<p class="org">Better.com</p>
+<ul>
+<li>Managed five data scientists and grew the team's reach from two products to eight.</li>
+</ul>
+</div>
+
+<div class="role">
+<p class="when">2015 to 2021</p>
+<h3>Four roles in six years</h3>
+<p class="org">General Electric</p>
+<p class="sub">Principal Data Scientist, LLM and Optimization</p>
+<ul>
+<li>$16M in added revenue from pricing optimization. Advised the CIO and EVPs, with a two-year roadmap approved by the CFO.</li>
+<li>Applied vision and language models to legal contracts. That work became published research.</li>
+</ul>
+<p class="sub">Director of Product Management, Repeatable Analytics</p>
+<ul>
+<li>Won $8M in funding with GE Research for a new data product. It yielded $50M in productivity gains and 80% reuse of analytics applications.</li>
+</ul>
+<p class="sub">Director of Product Management, Data Science, Search and ML</p>
+<ul>
+<li>Grew the team from two to 15. Delivered more than 22 prototypes for 10 internal customers, eight of which reached production.</li>
+</ul>
+<p class="sub">Senior Product Manager, Search and ML</p>
+<ul>
+<li>Led five people to revive struggling search and machine-learning efforts.</li>
+</ul>
+</div>
+
+<div class="role">
+<p class="when">2014 to 2015</p>
+<h3>Principal Consultant, Search and ML</h3>
+<p class="org">Avalon Consulting</p>
+<ul>
+<li>Led major client engagements, including Wells Fargo: more than five consultants and 1.5 billion documents.</li>
+</ul>
+</div>
+
+<div class="role">
+<p class="when">2011 to 2014</p>
+<h3>Senior Software Engineer, Search</h3>
+<p class="org">Turner Broadcasting</p>
+<ul>
+<li>Architected search for CNN, NBA, NASCAR, PGA, TBS, TNT, Cartoon Network and more.</li>
+<li>Backend architect for the Emmy-winning TBS and TNT companion apps.</li>
+</ul>
+</div>
+
+<div class="role">
+<p class="when">2005 to 2008</p>
+<h3>Where it started</h3>
+<p class="org">Hewlett Packard Autonomy and United Parcel Service</p>
+<ul>
+<li>Search and language-processing implementations for banks, media companies and law firms at HP Autonomy.</li>
+<li>Quantitative investments analyst and lead software engineer at UPS.</li>
+</ul>
+</div>
+
+<div class="role">
+<p class="when">2008 to now</p>
+<h3>Founder</h3>
+<p class="org">Concinnous Solutions, and three restaurant-technology startups</p>
+<ul>
+<li>Founded a search and machine-learning consulting practice serving Costco, Helzberg Diamonds, 1-800-Flowers, Turner Broadcasting and the American Medical Association.</li>
+<li>Built Streakss, StreetRoll and MenuSales.ai after more than ten years around a family restaurant business.</li>
+</ul>
+</div>
+
+</div>
 </section>
 
-<section>
-<h2>Background</h2>
-<dl>
-<dt>2025 to now</dt><dd>Director of AI, Fisher Phillips. Built and deployed internal AI products used daily by more than 800 lawyers.</dd>
-<dt>2021 to 2025</dt><dd>Associate Director of Product Management, ML and Analytics Automation, Walmart.</dd>
-<dt>2015 to 2021</dt><dd>General Electric. Principal Data Scientist, LLM and Optimization. Applied language models to legal contracts, which led to published research and a best-paper award.</dd>
-<dt>2008 to now</dt><dd>Founder, Concinnous Solutions. Search, NLP and ML consulting for Costco, Turner Broadcasting, the American Medical Association and others.</dd>
-<dt>2011 to 2014</dt><dd>Senior Software Engineer, Search, Turner Broadcasting.</dd>
-<dt>Education</dt><dd>MS and BS in Computer Science, Georgia Institute of Technology. Specialized in artificial intelligence and cryptography. Doctoral study in Human-Centered Computing, not completed.</dd>
-</dl>
+<section id="agents" class="focus">
+<h2>Agent control</h2>
+<div>
+<p class="big">The agent says it is done. <em>Is it?</em></p>
+<p>Coding agents report success when nothing ran. I kept hitting this while building with them, so I stopped reading agent reports and started demanding evidence a program can check: a command, its exit code, a trace event the agent did not write.</p>
+<p>That works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
+
+<div class="item">
+<h3>A CLI that will not mark work complete without command-backed evidence.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>. Spec first, red and green tests, browser proof, all saved as files. TypeScript.</p>
+</div>
+<div class="item">
+<h3>A scorer that grades a deliverable and its trace by counting evidence, not by asking a model.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>. "All tests pass" with no test event fails a gate. Python, no dependencies.</p>
+</div>
+<div class="item">
+<h3>Plain-English questions over data, with model-written code run in a restricted executor.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/curex">curex</a>. Python.</p>
+</div>
+</div>
 </section>
 
-<footer>
-<a href="https://github.com/priteshpatel15">GitHub</a> · <a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a> · Atlanta, GA
+<section id="research">
+<h2>Research</h2>
+<div>
+<div class="item">
+<h3>DoT-Net: Document Layout Classification Using Texture-based CNN</h3>
+<p class="ev"><span class="tag">ICDAR 2019</span>Kosaraju, Masum, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>. <a href="https://github.com/datax-lab/DoTNet">Code</a>.</p>
+</div>
+<div class="item">
+<h3>Table of Contents Recognition in OCR Documents Using Image-based Machine Learning</h3>
+<p class="ev"><span class="tag">ACM Southeast 2019</span>Student Best Paper Award. Kosaraju, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</p>
+</div>
+<div class="item">
+<h3>Visual Analytics for Converging-Business-Ecosystem Intelligence</h3>
+<p class="ev"><span class="tag">IEEE CG&amp;A 2012</span>Basole, Hu, Patel, Stasko. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</p>
+</div>
+<p class="sub">Education</p>
+<ul class="plain">
+<li>MS, Computer Science, Georgia Institute of Technology. Artificial intelligence and cryptography. National Science Foundation Fellowship for information-security coursework.</li>
+<li>BS, Computer Science, Highest Honors, Georgia Institute of Technology.</li>
+<li>Doctoral study in Human-Centered Computing at Georgia Tech, focused on visual analytics. Not completed.</li>
+</ul>
+</div>
+</section>
+
+<section id="teaching">
+<h2>Teaching and recognition</h2>
+<div>
+<ul class="plain">
+<li><strong>DataCamp instructor.</strong> My course, Concepts of Computer Science, covers Big-O notation, Turing machines and algorithms. Nearly 1,000 learners.</li>
+<li><strong>Speaking.</strong> TiE Atlanta panel on growing a business with AI. "Governed by Design" webinar with Airia on building policy and controls into an AI stack.</li>
+<li><strong>Teaching at work.</strong> I lead AI education across Fisher Phillips offices and led product management training across Walmart.</li>
+<li><strong>Awards.</strong> Walmart Making the Difference Award, 2023. GE Impact Awards and Above and Beyond Award.</li>
+</ul>
+</div>
+</section>
+
+<footer id="contact">
+<a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a> · <a href="https://github.com/priteshpatel15">GitHub</a> · Atlanta, GA
 </footer>
 </main>
 </body>
