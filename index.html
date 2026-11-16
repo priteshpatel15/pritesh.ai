@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pritesh Patel</title>
-<meta name="description" content="Pritesh Patel. Computer scientist, product leader and AI researcher. Twenty years of building search, data science and AI products at GE, Walmart, Turner and Fisher Phillips.">
+<meta name="description" content="Pritesh Patel. Software architect, product manager, data scientist and AI engineer who learned each craft hands-on, then led the team. Now working on control of AI agents.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -25,284 +25,177 @@ nav{position:sticky;top:0;z-index:1;background:color-mix(in oklch,var(--paper) 9
 nav div{max-width:62rem;margin:0 auto;padding:.7rem clamp(1rem,5vw,3rem);display:flex;gap:1.4rem;overflow-x:auto;font-size:.85rem;white-space:nowrap}
 nav a{text-decoration:none;color:var(--soft)} nav a:first-child{color:var(--ink);font-weight:600;margin-right:auto}
 main{max-width:62rem;margin:0 auto;padding:clamp(2.5rem,8vw,5.5rem) clamp(1rem,5vw,3rem) 4rem}
-h1,h3,.fig{font-family:Fraunces,serif;font-weight:400;text-wrap:balance}
+h1,h3,.big{font-family:Fraunces,serif;font-weight:400;text-wrap:balance}
 h1{font-size:clamp(2.4rem,1.4rem + 5vw,5rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 1.5rem;max-width:15ch}
 em{font-style:italic;color:var(--mark)}
-.lede{max-width:40rem;font-size:1.15em;margin:0 0 1rem}
-.hero{margin-bottom:clamp(2.5rem,7vw,5rem)}
+.lede{max-width:40rem;font-size:1.2em;margin:0 0 1rem}
+.hero{margin-bottom:clamp(1.5rem,4vw,2.5rem)}
 section{display:grid;grid-template-columns:minmax(7rem,11rem) 1fr;gap:1rem 2.5rem;padding:2.25rem 0;border-top:1px solid var(--rule)}
 h2{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.35rem 0 0}
 section>div{max-width:42rem;min-width:0}
-h3{font-size:1.45em;line-height:1.2;margin:0 0 .35rem}
+h3{font-size:1.3em;line-height:1.2;margin:1.6rem 0 .5rem}
+h3:first-child{margin-top:0}
 p{margin:0 0 1rem}
 a{color:inherit;text-decoration-color:var(--mark);text-decoration-thickness:1.5px;text-underline-offset:.2em}
 a:hover{color:var(--mark)} a:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
-ul{margin:0;padding:0;list-style:none}
-.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));gap:1.75rem 2rem}
-.fig{font-size:clamp(2rem,1.5rem + 2vw,2.9rem);line-height:1;display:block;margin-bottom:.4rem}
-.figs p{margin:0;color:var(--soft);font-size:.95em}
-.role{padding-bottom:1.9rem}
-.when{color:var(--mark);font-size:.78em;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .2rem}
-.org{color:var(--soft);margin:0 0 .5rem}
-.role li,.plain li{padding-left:1.1rem;position:relative;margin-bottom:.35rem}
-.role li::before,.plain li::before{content:"";position:absolute;left:0;top:.72em;width:.45rem;height:1px;background:var(--mark)}
-.sub{font-weight:600;margin:.9rem 0 .3rem}
-.focus{background:var(--wash);margin:0 calc(-1*clamp(1rem,5vw,3rem));padding-inline:clamp(1rem,5vw,3rem)}
-.focus .big{font-family:Fraunces,serif;font-size:clamp(1.8rem,1.2rem + 3vw,3.1rem);line-height:1.05;margin:0 0 1rem}
-.item{padding-bottom:1.5rem}
-.ev{color:var(--soft);font-size:.94em;margin:0}
-.tag{font-weight:600;color:var(--mark);letter-spacing:.08em;text-transform:uppercase;font-size:.78em;margin-right:.5em}
-.steps{list-style:none;margin:1.25rem 0 1.5rem;padding:0;counter-reset:s}
-.steps li{display:grid;grid-template-columns:1fr 1fr;gap:.25rem 1.75rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
-.steps li:last-child{border-bottom:1px solid var(--rule)}
-.steps p{margin:0}.steps .when{margin-bottom:.25rem}
+ul,ol{margin:0;padding:0;list-style:none}
+.when{color:var(--mark);font-size:.78em;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .25rem}
+.steps{margin:0 0 1.25rem}
+.steps li{display:grid;grid-template-columns:1fr 1fr;gap:.25rem 1.75rem;padding:1rem 0;border-top:1px solid var(--rule)}
+.steps li:first-child{border-top:0;padding-top:0}
+.steps p{margin:0}
 .steps div:first-child .when{color:var(--ink)}
-@media (max-width:40rem){.steps li{grid-template-columns:1fr;gap:.8rem}}
+.list li{padding-left:1.1rem;position:relative;margin-bottom:.4rem}
+.list li::before{content:"";position:absolute;left:0;top:.72em;width:.45rem;height:1px;background:var(--mark)}
+.list b{font-weight:600}
+.focus{background:var(--wash);margin:0 calc(-1*clamp(1rem,5vw,3rem));padding-inline:clamp(1rem,5vw,3rem)}
+.big{font-size:clamp(1.8rem,1.2rem + 3vw,3.1rem);line-height:1.05;margin:0 0 1rem}
+.yr{color:var(--soft);font-variant-numeric:tabular-nums;white-space:nowrap}
+.soft{color:var(--soft)}
+.guide{max-width:40rem;margin:0 0 clamp(2rem,6vw,4rem)}
+.guide ol{border-top:1px solid var(--rule)}
+.guide li{display:grid;grid-template-columns:11rem 1fr;gap:.2rem 1rem;padding:.55rem 0;border-bottom:1px solid var(--rule)}
+.guide a{font-weight:600}.guide span{color:var(--soft)}
+@media (max-width:40rem){.guide li{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);font-size:.92em}
-@media (max-width:40rem){section{grid-template-columns:1fr;gap:.6rem}}
+@media (max-width:40rem){section{grid-template-columns:1fr;gap:.6rem}.steps li{grid-template-columns:1fr;gap:.7rem}}
 </style>
 </head>
 <body>
 <nav><div>
-<a href="#top">Pritesh Patel</a><a href="#pattern">Story</a><a href="#agents">Agent control</a><a href="#notes">Field notes</a><a href="#research">Research</a><a href="#career">Career</a><a href="#contact">Contact</a>
+<a href="#top">Pritesh Patel</a><a href="#pattern">Story</a><a href="#built">Projects</a><a href="#agents">Agent control</a><a href="#research">Research</a><a href="#career">Career</a>
 </div></nav>
 <main id="top">
 
 <div class="hero">
 <h1>I build it first. Then I build the <em>team.</em></h1>
-<p class="lede">I am Pritesh Patel. For twenty years I have turned ambiguity into things that ship: search, data science and AI products, built as an engineer, a product manager, a data scientist and a founder.</p>
-<p class="lede">Four times I have learned a craft by doing the work myself, then led the people doing it. I have never stopped doing the work.</p>
-<p class="lede">I am Director of AI at Fisher Phillips, where I built the firm's AI team and the products more than 800 lawyers use every day.</p>
+<p class="lede">I am Pritesh Patel. Four times in twenty years I have learned a craft by doing the work myself, then led the people doing it: software architecture, product management, data science, and now AI engineering.</p>
+<p class="lede">I never stopped doing the work. Today I am Director of AI at Fisher Phillips, and I am still hands-on.</p>
+</div>
+
+<div class="guide">
+<p class="when">On this page</p>
+<p>This site shows what I have done, what I build on my own time, and the problem I am working on now.</p>
+<ol>
+<li><a href="#pattern">The pattern</a><span>Four crafts, each learned hands-on and then led.</span></li>
+<li><a href="#built">What I build</a><span>Projects in restaurants, money, data, research and voice.</span></li>
+<li><a href="#agents">Latest obsession</a><span>Checking whether AI agents did what they say. With code.</span></li>
+<li><a href="#research">Research</a><span>Three papers and my education.</span></li>
+<li><a href="#career">Career</a><span>Every role, in one line each.</span></li>
+</ol>
 </div>
 
 <section id="pattern">
 <h2>The pattern</h2>
 <div>
-<p>Player first, coach second, and still a player. The same thing has happened in every discipline I have worked in.</p>
 <ol class="steps">
-<li><div><p class="when">Software architect</p><p>Architected search for CNN, NBA, TBS, TNT and the rest of Turner's sites and apps. Backend architect for its Emmy-winning companion apps.</p></div>
-<div><p class="when">Then led</p><p>Led client teams at Avalon, including a Wells Fargo engagement over 1.5 billion documents, and mentored more than thirty consultants.</p></div></li>
-<li><div><p class="when">Product manager</p><p>Joined GE as a senior product manager and revived its struggling search and machine-learning efforts with a team of five.</p></div>
-<div><p class="when">Then led</p><p>Promoted to director. Grew the group from two people to 15 and shipped more than 22 prototypes, eight into production.</p></div></li>
-<li><div><p class="when">Data scientist</p><p>Went back to the keyboard as a principal data scientist. Built pricing models worth $16M and document models that became published research.</p></div>
-<div><p class="when">Then led</p><p>Mentored six data scientists at GE, then managed a team of five at Better.com and took its reach from two products to eight.</p></div></li>
-<li><div><p class="when">AI engineer</p><p>Personally built and deployed three AI products at Fisher Phillips, including a litigation agent 50 attorneys use.</p></div>
-<div><p class="when">Then led</p><p>Hired and mentored the firm's four-person AI team. Together we have deployed more than 25 agents for 800 lawyers.</p></div></li>
+<li><div><p class="when">Software architect</p><p>Architected search for CNN, NBA, TBS and TNT at Turner, and the backend of its Emmy-winning companion apps.</p></div>
+<div><p class="when">Then led</p><p>Client teams at Avalon, including a Wells Fargo search over 1.5 billion documents.</p></div></li>
+<li><div><p class="when">Product manager</p><p>Revived GE's struggling search and machine-learning efforts as a senior product manager.</p></div>
+<div><p class="when">Then led</p><p>As director, grew the group from two people to 15 and took eight of 22 prototypes into production.</p></div></li>
+<li><div><p class="when">Data scientist</p><p>Back at the keyboard at GE: pricing models worth $16M and document models that became published research.</p></div>
+<div><p class="when">Then led</p><p>Five data scientists at Better.com, taking the team from two products to eight.</p></div></li>
+<li><div><p class="when">AI engineer</p><p>Personally built three AI products at Fisher Phillips, including a litigation agent 50 attorneys use.</p></div>
+<div><p class="when">Then led</p><p>Hired the firm's AI team. Together we run more than 25 agents for 800 lawyers.</p></div></li>
 </ol>
-<p>Each move made the next one better. I manage engineers as someone who has shipped, set product direction as someone who can read the model, and review agent work as someone who has been burned by it.</p>
+<p>In between, at Walmart, I led products that lifted e-commerce in-stock by $10B. Each craft made me better at the next. And when the day job ends, I keep building.</p>
 </div>
 </section>
 
-<section id="results">
-<h2>Results</h2>
-<div class="figs">
-<div><span class="fig">$10B</span><p>boost to e-commerce in-stock at Walmart, with more than $50M of ordering automated each week.</p></div>
-<div><span class="fig">$16M</span><p>in added revenue from pricing optimization models at GE.</p></div>
-<div><span class="fig">$50M</span><p>in productivity gains from a GE analytics product I pitched and won $8M to build.</p></div>
-<div><span class="fig">800+</span><p>lawyers using AI products my team built at Fisher Phillips, with more than 25 agents deployed.</p></div>
-<div><span class="fig">2 to 15</span><p>the GE data science team I grew and led, delivering more than 22 prototypes with eight in production.</p></div>
-<div><span class="fig">3</span><p>peer-reviewed papers, one with a Student Best Paper Award.</p></div>
-</div>
-</section>
-
-<section id="how">
-<h2>How I work</h2>
+<section id="built">
+<h2>What I build</h2>
 <div>
-<p>I find the root cause before I pick a tool. A language model, a search index and a whiteboard are all means to an end.</p>
-<ul class="plain">
-<li><strong>Hands on.</strong> I still write Python, build prototypes and deploy agents. I embed with the people doing the work and build for what they actually do.</li>
-<li><strong>Teams.</strong> I hire, mentor and grow people. Four at Fisher Phillips including PhDs, fifteen at GE, more than thirty consultants at Avalon.</li>
-<li><strong>Trust.</strong> I advise executives and operators alike, from a law firm chairman to a restaurant owner, and bring skeptics along with evidence.</li>
+<p>Most of this started as a problem I had. Linked projects are public. The rest are described here.</p>
+
+<h3>Restaurants</h3>
+<ul class="list">
+<li><b>Automated books for a frozen-yogurt franchise.</b> Bank, payroll, point-of-sale, delivery and supplier exports in. A finished profit-and-loss statement out.</li>
+<li><b>Item-level demand forecasting.</b> Weather, local events and nearby businesses as signals, backtested against sales history.</li>
+<li><b>A phone app for the operator.</b> Decisions, money, schedule and a spoken morning briefing.</li>
+<li><b>Three startups.</b> Guest loyalty, food-truck location prediction, and an AI menu assistant.</li>
+</ul>
+
+<h3>Money and personal operations</h3>
+<ul class="list">
+<li><b><a href="https://github.com/priteshpatel15/personal-finance-agent">personal-finance-agent</a>.</b> A budget pipeline that runs on your own machine and keeps your spreadsheet in charge. 101 tests.</li>
+<li><b>A live budget on my phone.</b> Bank exports normalized into a shared sheet, with categories that learn from my corrections.</li>
+<li><b>A priority board run by an agent.</b> It sorts my week by energy and deadline, then does the tasks it can.</li>
+<li><b>Paper mail and receipts.</b> Scanned mail sorted into actions, and email receipts turned into expense-ready proof.</li>
+</ul>
+
+<h3>Data and documents</h3>
+<ul class="list">
+<li><b><a href="https://github.com/priteshpatel15/curex">curex</a>.</b> Ask a dataset questions in plain English. A model writes the code and a restricted executor runs it.</li>
+<li><b>A scanned Gujarati book, back into text.</b> Page-by-page transcription with a vision model where standard tools failed.</li>
+<li><b>A Civil War regimental roster</b> turned from a scanned volume into a searchable table.</li>
+<li><b>Slides from a prompt or a document.</b> A model plans the story and a renderer builds the deck.</li>
+</ul>
+
+<h3>Research and simulation</h3>
+<ul class="list">
+<li><b>Customer research, automated.</b> Four agents run a Jobs-to-be-Done study end to end, with a fine-tuned model compared against a frontier one.</li>
+<li><b>Why shelves go empty.</b> Bayesian networks that model the causes of retail out-of-stocks.</li>
+<li><b>A trucking world generator.</b> Synthetic trucks, drivers and loads placed by census data, for dispatch research.</li>
+<li><b>A GPU toolkit for large optimization problems.</b> Linear-program and subgradient solvers in CUDA.</li>
+</ul>
+
+<h3>Voice</h3>
+<ul class="list">
+<li><b><a href="https://github.com/priteshpatel15/ai-debate-simulator">ai-debate-simulator</a>.</b> Practice a debate out loud. An AI candidate rebuts you in its own voice.</li>
+<li><b>A live radio announcer for fantasy football.</b> Play-by-play events become spoken calls over a crowd that reacts.</li>
+</ul>
+
+<h3>At Fisher Phillips</h3>
+<ul class="list">
+<li><b>A litigation workflow agent</b> used by 50 attorneys, with a time-entry appeals agent.</li>
+<li><b>A wage-and-hour audit product</b> that reads payroll documents for client audits.</li>
+<li><b>Website privacy and cookie scanning</b> offered to clients as a compliance service.</li>
+<li><b>AI-driven enterprise search,</b> replacing the firm's legacy search and serving its research agents.</li>
 </ul>
 </div>
 </section>
 
 <section id="agents" class="focus">
-<h2>Agent control</h2>
+<h2>Latest obsession</h2>
 <div>
 <p class="big">The agent says it is done. <em>Is it?</em></p>
-<p>Coding agents report success when nothing ran. I kept hitting this while building with them, so I stopped reading agent reports and started demanding evidence a program can check: a command, its exit code, a trace event the agent did not write.</p>
-<p>That works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
-
-<div class="item">
-<h3>A CLI that will not mark work complete without command-backed evidence.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>. Spec first, red and green tests, browser proof, all saved as files. TypeScript.</p>
-</div>
-<div class="item">
-<h3>A scorer that grades a deliverable and its trace by counting evidence, not by asking a model.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>. "All tests pass" with no test event fails a gate. Python, no dependencies.</p>
-</div>
-<div class="item">
-<h3>Plain-English questions over data, with model-written code run in a restricted executor.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/curex">curex</a>. Python.</p>
-</div>
-</div>
-</section>
-
-<section id="notes">
-<h2>Field notes</h2>
-<div>
-<p>What I have learned from building with AI agents every day. Each one cost me something to find out.</p>
-<div class="item"><h3>Instructions ask. A harness blocks.</h3>
-<p class="ev">I wrote careful instructions telling agents to verify their work. They skipped steps anyway. The version that works is a program that refuses to accept the work.</p></div>
-<div class="item"><h3>Evidence has to come from the runtime, not from the agent.</h3>
-<p class="ev">My own scorer can be fooled. A trace that only says "I promise I ran a test" passes its gate. I say so in its README, and it is the problem I most want to solve.</p></div>
-<div class="item"><h3>"Send to review" beats a confident guess.</h3>
-<p class="ev">My budgeting tool will not label a transaction as a transfer unless it finds the matching leg in another account. When it is unsure, it says so. Most systems I see are built the other way.</p></div>
-<div class="item"><h3>A guardrail is not a boundary.</h3>
-<p class="ev">The executor in curex stops a model's careless code. It does not stop an adversary, and I can show you three ways through it. Knowing which one you have built matters more than the name you give it.</p></div>
-<div class="item"><h3>Run it yourself before you say it works.</h3>
-<p class="ev">Every project on this page was re-run from a clean copy before it was listed. That turned up a bug in my own scorer, which had been silently ignoring one trace format.</p></div>
-</div>
-</section>
-
-<section id="built">
-<h2>Also built</h2>
-<div>
-<p>Side projects, all public, all written to solve a problem I had.</p>
-<div class="item"><h3>A budget pipeline that keeps your spreadsheet in charge.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/personal-finance-agent">personal-finance-agent</a>. Runs on your own machine. A bank client written without the vendor's library, secrets in the system keychain, 101 tests. Python.</p></div>
-<div class="item"><h3>A sparring partner for debate practice that answers out loud.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/ai-debate-simulator">ai-debate-simulator</a>. You speak, and an AI candidate rebuts you in its own voice in real time. JavaScript.</p></div>
-<div class="item"><h3>A workflow that keeps a coding agent to small, checked changes.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/dev-command-library">dev-command-library</a>. One command set from design to verified change, with a size budget per change.</p></div>
+<p>Most of what I build now, I build with AI agents. They kept telling me work was finished when it was not. So I stopped reading their reports and started demanding evidence a program can check: a command, its exit code, a trace the agent did not write.</p>
+<ul class="list">
+<li><b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>.</b> A CLI that will not mark an agent's work complete without command-backed test evidence. 189 tests.</li>
+<li><b><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>.</b> Scores a deliverable and its trace by counting evidence. No model grades the output.</li>
+<li><b><a href="https://github.com/priteshpatel15/dev-command-library">dev-command-library</a>.</b> Keeps a coding agent to small changes, each one checked before the next.</li>
+<li><b>A product harness.</b> Compiles a product spec into contracts and review lanes an agent must pass.</li>
+</ul>
+<p style="margin-top:1rem">This works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
 </div>
 </section>
 
 <section id="research">
 <h2>Research</h2>
 <div>
-<div class="item">
-<h3>DoT-Net: Document Layout Classification Using Texture-based CNN</h3>
-<p class="ev"><span class="tag">ICDAR 2019</span>Kosaraju, Masum, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>. <a href="https://github.com/datax-lab/DoTNet">Code</a>.</p>
-</div>
-<div class="item">
-<h3>Table of Contents Recognition in OCR Documents Using Image-based Machine Learning</h3>
-<p class="ev"><span class="tag">ACM Southeast 2019</span>Student Best Paper Award. Kosaraju, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</p>
-</div>
-<div class="item">
-<h3>Visual Analytics for Converging-Business-Ecosystem Intelligence</h3>
-<p class="ev"><span class="tag">IEEE CG&amp;A 2012</span>Basole, Hu, Patel, Stasko. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</p>
-</div>
-<p class="sub">Education</p>
-<ul class="plain">
-<li>MS, Computer Science, Georgia Institute of Technology. Artificial intelligence and cryptography. National Science Foundation Fellowship for information-security coursework.</li>
-<li>BS, Computer Science, Highest Honors, Georgia Institute of Technology.</li>
-<li>Doctoral study in Human-Centered Computing at Georgia Tech, focused on visual analytics. Not completed.</li>
+<ul class="list">
+<li><b>DoT-Net: Document Layout Classification Using Texture-based CNN.</b> ICDAR 2019. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>, <a href="https://github.com/datax-lab/DoTNet">code</a>.</li>
+<li><b>Table of Contents Recognition in OCR Documents Using Image-based Machine Learning.</b> ACM Southeast 2019. Student Best Paper Award. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</li>
+<li><b>Visual Analytics for Converging-Business-Ecosystem Intelligence.</b> IEEE CG&amp;A 2012. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</li>
 </ul>
+<p class="soft" style="margin-top:1rem">MS and BS in Computer Science, Georgia Institute of Technology, in artificial intelligence and cryptography. National Science Foundation Fellowship. Doctoral study in Human-Centered Computing, not completed.</p>
 </div>
 </section>
 
 <section id="career">
 <h2>Career</h2>
 <div>
-
-<div class="role">
-<p class="when">2025 to now</p>
-<h3>Director of AI</h3>
-<p class="org">Fisher Phillips, a national labor and employment law firm</p>
-<ul>
-<li>Hired and mentored a four-person AI team and created the firm's AI software development lifecycle.</li>
-<li>Deployed internal AI products that support more than 800 lawyers daily, and more than 25 agents with the team.</li>
-<li>Personally built three compliance products for attorneys and clients, including a litigation workflow agent used by 50 attorneys and a wage-and-hour audit product.</li>
-<li>Advise the Chairman weekly and lead the AI Committee. Serve as a strategic AI advisor to some of the firm's largest clients.</li>
+<ul class="list">
+<li><span class="yr">2025 to now.</span> <b>Director of AI, Fisher Phillips.</b> Built the AI team and the products 800 lawyers use daily. Advise the Chairman weekly.</li>
+<li><span class="yr">2021 to 2025.</span> <b>Associate Director of Product Management, ML and Analytics Automation, Walmart.</b> $10B in-stock lift. $50M of ordering automated each week.</li>
+<li><span class="yr">2021.</span> <b>Data Science Manager, Better.com.</b></li>
+<li><span class="yr">2015 to 2021.</span> <b>General Electric.</b> Senior product manager, twice a director of product management, then principal data scientist. Won $8M to build a data product that returned $50M in productivity.</li>
+<li><span class="yr">2014 to 2015.</span> <b>Principal Consultant, Search and ML, Avalon Consulting.</b></li>
+<li><span class="yr">2011 to 2014.</span> <b>Senior Software Engineer, Search, Turner Broadcasting.</b></li>
+<li><span class="yr">2005 to 2008.</span> <b>HP Autonomy and UPS.</b> Search implementations for banks and media companies. Quantitative analyst and lead engineer.</li>
+<li><span class="yr">2008 to now.</span> <b>Founder, Concinnous Solutions.</b> Search and ML consulting for Costco, Turner, the American Medical Association and others.</li>
 </ul>
-</div>
-
-<div class="role">
-<p class="when">2021 to 2025</p>
-<h3>Associate Director of Product Management, ML and Analytics Automation</h3>
-<p class="org">Walmart</p>
-<ul>
-<li>Built toward a self-healing supply chain. Boosted in-stock by $10B in e-commerce.</li>
-<li>Automated more than $50M of ordering a week, with products processing over a billion rows a day.</li>
-<li>Thousands of internal expert users adopted the tools. Earned an award approved by the CTO.</li>
-</ul>
-</div>
-
-<div class="role">
-<p class="when">2021</p>
-<h3>Data Science Manager</h3>
-<p class="org">Better.com</p>
-<ul>
-<li>Managed five data scientists and grew the team's reach from two products to eight.</li>
-</ul>
-</div>
-
-<div class="role">
-<p class="when">2015 to 2021</p>
-<h3>Four roles in six years</h3>
-<p class="org">General Electric</p>
-<p class="sub">Principal Data Scientist, LLM and Optimization</p>
-<ul>
-<li>$16M in added revenue from pricing optimization. Advised the CIO and EVPs, with a two-year roadmap approved by the CFO.</li>
-<li>Applied vision and language models to legal contracts. That work became published research.</li>
-</ul>
-<p class="sub">Director of Product Management, Repeatable Analytics</p>
-<ul>
-<li>Won $8M in funding with GE Research for a new data product. It yielded $50M in productivity gains and 80% reuse of analytics applications.</li>
-</ul>
-<p class="sub">Director of Product Management, Data Science, Search and ML</p>
-<ul>
-<li>Grew the team from two to 15. Delivered more than 22 prototypes for 10 internal customers, eight of which reached production.</li>
-</ul>
-<p class="sub">Senior Product Manager, Search and ML</p>
-<ul>
-<li>Led five people to revive struggling search and machine-learning efforts.</li>
-</ul>
-</div>
-
-<div class="role">
-<p class="when">2014 to 2015</p>
-<h3>Principal Consultant, Search and ML</h3>
-<p class="org">Avalon Consulting</p>
-<ul>
-<li>Led major client engagements, including Wells Fargo: more than five consultants and 1.5 billion documents.</li>
-</ul>
-</div>
-
-<div class="role">
-<p class="when">2011 to 2014</p>
-<h3>Senior Software Engineer, Search</h3>
-<p class="org">Turner Broadcasting</p>
-<ul>
-<li>Architected search for CNN, NBA, NASCAR, PGA, TBS, TNT, Cartoon Network and more.</li>
-<li>Backend architect for the Emmy-winning TBS and TNT companion apps.</li>
-</ul>
-</div>
-
-<div class="role">
-<p class="when">2005 to 2008</p>
-<h3>Where it started</h3>
-<p class="org">Hewlett Packard Autonomy and United Parcel Service</p>
-<ul>
-<li>Search and language-processing implementations for banks, media companies and law firms at HP Autonomy.</li>
-<li>Quantitative investments analyst and lead software engineer at UPS.</li>
-</ul>
-</div>
-
-<div class="role">
-<p class="when">2008 to now</p>
-<h3>Founder</h3>
-<p class="org">Concinnous Solutions, and three restaurant-technology startups</p>
-<ul>
-<li>Founded a search and machine-learning consulting practice serving Costco, Helzberg Diamonds, 1-800-Flowers, Turner Broadcasting and the American Medical Association.</li>
-<li>Built Streakss, StreetRoll and MenuSales.ai after more than ten years around a family restaurant business.</li>
-</ul>
-</div>
-
-</div>
-</section>
-
-<section id="teaching">
-<h2>Teaching and recognition</h2>
-<div>
-<ul class="plain">
-<li><strong>DataCamp instructor.</strong> My course, Concepts of Computer Science, covers Big-O notation, Turing machines and algorithms. Nearly 1,000 learners.</li>
-<li><strong>Speaking.</strong> TiE Atlanta panel on growing a business with AI. "Governed by Design" webinar with Airia on building policy and controls into an AI stack.</li>
-<li><strong>Teaching at work.</strong> I lead AI education across Fisher Phillips offices and led product management training across Walmart.</li>
-<li><strong>Awards.</strong> Walmart Making the Difference Award, 2023. GE Impact Awards and Above and Beyond Award.</li>
-</ul>
+<p class="soft" style="margin-top:1rem">I also teach. My DataCamp course, Concepts of Computer Science, has nearly 1,000 learners. Walmart Making the Difference Award, 2023. GE Impact Awards.</p>
 </div>
 </section>
 
