@@ -52,21 +52,46 @@ ul{margin:0;padding:0;list-style:none}
 .item{padding-bottom:1.5rem}
 .ev{color:var(--soft);font-size:.94em;margin:0}
 .tag{font-weight:600;color:var(--mark);letter-spacing:.08em;text-transform:uppercase;font-size:.78em;margin-right:.5em}
+.steps{list-style:none;margin:1.25rem 0 1.5rem;padding:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:1fr 1fr;gap:.25rem 1.75rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
+.steps li:last-child{border-bottom:1px solid var(--rule)}
+.steps p{margin:0}.steps .when{margin-bottom:.25rem}
+.steps div:first-child .when{color:var(--ink)}
+@media (max-width:40rem){.steps li{grid-template-columns:1fr;gap:.8rem}}
 footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);font-size:.92em}
 @media (max-width:40rem){section{grid-template-columns:1fr;gap:.6rem}}
 </style>
 </head>
 <body>
 <nav><div>
-<a href="#top">Pritesh Patel</a><a href="#results">Results</a><a href="#career">Career</a><a href="#agents">Agent control</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+<a href="#top">Pritesh Patel</a><a href="#pattern">Story</a><a href="#agents">Agent control</a><a href="#notes">Field notes</a><a href="#research">Research</a><a href="#career">Career</a><a href="#contact">Contact</a>
 </div></nav>
 <main id="top">
 
 <div class="hero">
-<h1>I turn ambiguity into things that <em>ship.</em></h1>
-<p class="lede">I am Pritesh Patel: computer scientist, product leader and AI researcher. For twenty years I have built search, data science and AI products, as an engineer, a data scientist, a product director and a founder.</p>
+<h1>I build it first. Then I build the <em>team.</em></h1>
+<p class="lede">I am Pritesh Patel. For twenty years I have turned ambiguity into things that ship: search, data science and AI products, built as an engineer, a product manager, a data scientist and a founder.</p>
+<p class="lede">Four times I have learned a craft by doing the work myself, then led the people doing it. I have never stopped doing the work.</p>
 <p class="lede">I am Director of AI at Fisher Phillips, where I built the firm's AI team and the products more than 800 lawyers use every day.</p>
 </div>
+
+<section id="pattern">
+<h2>The pattern</h2>
+<div>
+<p>Player first, coach second, and still a player. The same thing has happened in every discipline I have worked in.</p>
+<ol class="steps">
+<li><div><p class="when">Software architect</p><p>Architected search for CNN, NBA, TBS, TNT and the rest of Turner's sites and apps. Backend architect for its Emmy-winning companion apps.</p></div>
+<div><p class="when">Then led</p><p>Led client teams at Avalon, including a Wells Fargo engagement over 1.5 billion documents, and mentored more than thirty consultants.</p></div></li>
+<li><div><p class="when">Product manager</p><p>Joined GE as a senior product manager and revived its struggling search and machine-learning efforts with a team of five.</p></div>
+<div><p class="when">Then led</p><p>Promoted to director. Grew the group from two people to 15 and shipped more than 22 prototypes, eight into production.</p></div></li>
+<li><div><p class="when">Data scientist</p><p>Went back to the keyboard as a principal data scientist. Built pricing models worth $16M and document models that became published research.</p></div>
+<div><p class="when">Then led</p><p>Mentored six data scientists at GE, then managed a team of five at Better.com and took its reach from two products to eight.</p></div></li>
+<li><div><p class="when">AI engineer</p><p>Personally built and deployed three AI products at Fisher Phillips, including a litigation agent 50 attorneys use.</p></div>
+<div><p class="when">Then led</p><p>Hired and mentored the firm's four-person AI team. Together we have deployed more than 25 agents for 800 lawyers.</p></div></li>
+</ol>
+<p>Each move made the next one better. I manage engineers as someone who has shipped, set product direction as someone who can read the model, and review agent work as someone who has been burned by it.</p>
+</div>
+</section>
 
 <section id="results">
 <h2>Results</h2>
@@ -88,6 +113,82 @@ footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);fon
 <li><strong>Hands on.</strong> I still write Python, build prototypes and deploy agents. I embed with the people doing the work and build for what they actually do.</li>
 <li><strong>Teams.</strong> I hire, mentor and grow people. Four at Fisher Phillips including PhDs, fifteen at GE, more than thirty consultants at Avalon.</li>
 <li><strong>Trust.</strong> I advise executives and operators alike, from a law firm chairman to a restaurant owner, and bring skeptics along with evidence.</li>
+</ul>
+</div>
+</section>
+
+<section id="agents" class="focus">
+<h2>Agent control</h2>
+<div>
+<p class="big">The agent says it is done. <em>Is it?</em></p>
+<p>Coding agents report success when nothing ran. I kept hitting this while building with them, so I stopped reading agent reports and started demanding evidence a program can check: a command, its exit code, a trace event the agent did not write.</p>
+<p>That works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
+
+<div class="item">
+<h3>A CLI that will not mark work complete without command-backed evidence.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>. Spec first, red and green tests, browser proof, all saved as files. TypeScript.</p>
+</div>
+<div class="item">
+<h3>A scorer that grades a deliverable and its trace by counting evidence, not by asking a model.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>. "All tests pass" with no test event fails a gate. Python, no dependencies.</p>
+</div>
+<div class="item">
+<h3>Plain-English questions over data, with model-written code run in a restricted executor.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/curex">curex</a>. Python.</p>
+</div>
+</div>
+</section>
+
+<section id="notes">
+<h2>Field notes</h2>
+<div>
+<p>What I have learned from building with AI agents every day. Each one cost me something to find out.</p>
+<div class="item"><h3>Instructions ask. A harness blocks.</h3>
+<p class="ev">I wrote careful instructions telling agents to verify their work. They skipped steps anyway. The version that works is a program that refuses to accept the work.</p></div>
+<div class="item"><h3>Evidence has to come from the runtime, not from the agent.</h3>
+<p class="ev">My own scorer can be fooled. A trace that only says "I promise I ran a test" passes its gate. I say so in its README, and it is the problem I most want to solve.</p></div>
+<div class="item"><h3>"Send to review" beats a confident guess.</h3>
+<p class="ev">My budgeting tool will not label a transaction as a transfer unless it finds the matching leg in another account. When it is unsure, it says so. Most systems I see are built the other way.</p></div>
+<div class="item"><h3>A guardrail is not a boundary.</h3>
+<p class="ev">The executor in curex stops a model's careless code. It does not stop an adversary, and I can show you three ways through it. Knowing which one you have built matters more than the name you give it.</p></div>
+<div class="item"><h3>Run it yourself before you say it works.</h3>
+<p class="ev">Every project on this page was re-run from a clean copy before it was listed. That turned up a bug in my own scorer, which had been silently ignoring one trace format.</p></div>
+</div>
+</section>
+
+<section id="built">
+<h2>Also built</h2>
+<div>
+<p>Side projects, all public, all written to solve a problem I had.</p>
+<div class="item"><h3>A budget pipeline that keeps your spreadsheet in charge.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/personal-finance-agent">personal-finance-agent</a>. Runs on your own machine. A bank client written without the vendor's library, secrets in the system keychain, 101 tests. Python.</p></div>
+<div class="item"><h3>A sparring partner for debate practice that answers out loud.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/ai-debate-simulator">ai-debate-simulator</a>. You speak, and an AI candidate rebuts you in its own voice in real time. JavaScript.</p></div>
+<div class="item"><h3>A workflow that keeps a coding agent to small, checked changes.</h3>
+<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/dev-command-library">dev-command-library</a>. One command set from design to verified change, with a size budget per change.</p></div>
+</div>
+</section>
+
+<section id="research">
+<h2>Research</h2>
+<div>
+<div class="item">
+<h3>DoT-Net: Document Layout Classification Using Texture-based CNN</h3>
+<p class="ev"><span class="tag">ICDAR 2019</span>Kosaraju, Masum, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>. <a href="https://github.com/datax-lab/DoTNet">Code</a>.</p>
+</div>
+<div class="item">
+<h3>Table of Contents Recognition in OCR Documents Using Image-based Machine Learning</h3>
+<p class="ev"><span class="tag">ACM Southeast 2019</span>Student Best Paper Award. Kosaraju, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</p>
+</div>
+<div class="item">
+<h3>Visual Analytics for Converging-Business-Ecosystem Intelligence</h3>
+<p class="ev"><span class="tag">IEEE CG&amp;A 2012</span>Basole, Hu, Patel, Stasko. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</p>
+</div>
+<p class="sub">Education</p>
+<ul class="plain">
+<li>MS, Computer Science, Georgia Institute of Technology. Artificial intelligence and cryptography. National Science Foundation Fellowship for information-security coursework.</li>
+<li>BS, Computer Science, Highest Honors, Georgia Institute of Technology.</li>
+<li>Doctoral study in Human-Centered Computing at Georgia Tech, focused on visual analytics. Not completed.</li>
 </ul>
 </div>
 </section>
@@ -190,52 +291,6 @@ footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);fon
 </ul>
 </div>
 
-</div>
-</section>
-
-<section id="agents" class="focus">
-<h2>Agent control</h2>
-<div>
-<p class="big">The agent says it is done. <em>Is it?</em></p>
-<p>Coding agents report success when nothing ran. I kept hitting this while building with them, so I stopped reading agent reports and started demanding evidence a program can check: a command, its exit code, a trace event the agent did not write.</p>
-<p>That works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
-
-<div class="item">
-<h3>A CLI that will not mark work complete without command-backed evidence.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>. Spec first, red and green tests, browser proof, all saved as files. TypeScript.</p>
-</div>
-<div class="item">
-<h3>A scorer that grades a deliverable and its trace by counting evidence, not by asking a model.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>. "All tests pass" with no test event fails a gate. Python, no dependencies.</p>
-</div>
-<div class="item">
-<h3>Plain-English questions over data, with model-written code run in a restricted executor.</h3>
-<p class="ev"><span class="tag">Code</span><a href="https://github.com/priteshpatel15/curex">curex</a>. Python.</p>
-</div>
-</div>
-</section>
-
-<section id="research">
-<h2>Research</h2>
-<div>
-<div class="item">
-<h3>DoT-Net: Document Layout Classification Using Texture-based CNN</h3>
-<p class="ev"><span class="tag">ICDAR 2019</span>Kosaraju, Masum, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1109/ICDAR.2019.00168">Paper</a>. <a href="https://github.com/datax-lab/DoTNet">Code</a>.</p>
-</div>
-<div class="item">
-<h3>Table of Contents Recognition in OCR Documents Using Image-based Machine Learning</h3>
-<p class="ev"><span class="tag">ACM Southeast 2019</span>Student Best Paper Award. Kosaraju, Tsaku, Patel, Bayramoglu, Modgil, Kang. <a href="https://doi.org/10.1145/3299815.3314455">Paper</a>.</p>
-</div>
-<div class="item">
-<h3>Visual Analytics for Converging-Business-Ecosystem Intelligence</h3>
-<p class="ev"><span class="tag">IEEE CG&amp;A 2012</span>Basole, Hu, Patel, Stasko. <a href="https://doi.org/10.1109/MCG.2012.27">Paper</a>.</p>
-</div>
-<p class="sub">Education</p>
-<ul class="plain">
-<li>MS, Computer Science, Georgia Institute of Technology. Artificial intelligence and cryptography. National Science Foundation Fellowship for information-security coursework.</li>
-<li>BS, Computer Science, Highest Honors, Georgia Institute of Technology.</li>
-<li>Doctoral study in Human-Centered Computing at Georgia Tech, focused on visual analytics. Not completed.</li>
-</ul>
 </div>
 </section>
 
