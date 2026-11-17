@@ -59,7 +59,7 @@ footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);fon
 </head>
 <body>
 <nav><div>
-<a href="#top">Pritesh Patel</a><a href="#truth">AI truth</a><a href="#tinkering">Projects</a><a href="#career">Career</a><a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a>
+<a href="#top">Pritesh Patel</a><a href="#truth">AI truth</a><a href="#legal">Legal AI</a><a href="#tinkering">Projects</a><a href="#career">Career</a><a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a>
 </div></nav>
 <main id="top">
 
@@ -69,7 +69,7 @@ footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);fon
 <p>I have also started four companies: three product companies and one consulting practice. The consulting practice lasted. The product companies taught me things I use every day.</p>
 <p class="way">Find the hidden truth behind the problem, solve it myself, then build the team around it.</p>
 <p>I have a deep view of every part of building an AI company. Most of my experience is in companies that were not digital first, where software served another line of business. There I built software, then software teams. Built products, then product teams. Built data science models, then data science teams. Built AI products, then an AI team. I have been a player and a coach on every team I have managed.</p>
-<p class="next">Below are personal projects from outside of work. For my work, see <a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a>. My latest obsession is <a href="#truth">keeping AI telling the truth</a>, so those projects and their code come first. After them are <a href="#tinkering">a few things I have tinkered with</a> over the years on my own time.</p>
+<p class="next">Below are mostly personal projects from outside of work. For my work, see <a href="https://www.linkedin.com/in/pritesh-p/">LinkedIn</a>. My latest obsession is <a href="#truth">keeping AI telling the truth</a>, so those projects and their code come first. Then <a href="#legal">what I build for lawyers</a>, and <a href="#tinkering">a few things I have tinkered with</a> over the years on my own time.</p>
 </div>
 
 <section id="truth" class="focus">
@@ -78,14 +78,27 @@ footer{border-top:1px solid var(--rule);padding-top:1.5rem;color:var(--soft);fon
 <p class="big">Keeping AI telling the <em>truth.</em></p>
 <p>I build with AI agents every day. They tell me work is finished when it is not. So I stopped reading their reports and started demanding evidence a program can check: a command, its exit code, a trace the agent did not write.</p>
 <ul class="proj">
-<li><p><b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>.</b> A command-line tool that makes a coding agent write the spec first, show a failing test, then a passing one. It refuses to mark work complete without that proof.</p>
+<li><p><b><a href="https://github.com/priteshpatel15/sdd-harness">sdd-harness</a>.</b> A command-line tool that makes a coding agent write the spec first, show a failing test, then a passing one. It refuses to accept work without a recorded failing run and passing run, in that order.</p>
 <p class="why">Agents skip steps when nothing checks them. Asking nicely did not work.</p></li>
 <li><p><b><a href="https://github.com/priteshpatel15/agent-output-eval">agent-output-eval</a>.</b> A scorer for what an agent delivers and the record of how it got there. It counts evidence. If a report says "all tests pass" and no test ran, it fails.</p>
 <p class="why">Asking a second model to grade the first only moves the trust problem.</p></li>
 <li><p><b><a href="https://github.com/priteshpatel15/dev-command-library">dev-command-library</a>.</b> A set of commands that takes an agent from design to a finished change, one small step at a time, with a size limit on each step.</p>
 <p class="why">Big changes are where agents drift and where false claims hide.</p></li>
 </ul>
-<p style="margin-top:1.25rem">This works while the checker is simple and the agent is not trying to fool it. I want to know what holds when neither is true.</p>
+<p style="margin-top:1.25rem">Then I found the same hole in each one. The agent could still produce the evidence itself: pick the test command, write the trace, fill in the record. My own build logs show an agent "passing" a test with a command that only exits. So the real question is who writes the evidence, and how you check a system more capable than you. That is what I am working on.</p>
+</div>
+</section>
+
+<section id="legal">
+<h2>For lawyers</h2>
+<div>
+<p>The one part of my day job I will mention here, because it is where I learned how lawyers actually work. I build AI products for attorneys at a national employment law firm. I built these three myself.</p>
+<ul class="proj">
+<li><p><b>A litigation workflow agent.</b> Used by 50 attorneys. It includes a time-entry appeals agent.</p></li>
+<li><p><b>A wage-and-hour audit product.</b> Reads payroll documents for client audits.</p></li>
+<li><p><b>Website privacy and cookie scanning.</b> Scans websites and their cookies for privacy compliance, offered to clients as a service.</p></li>
+</ul>
+<p style="margin-top:1rem" class="soft">More than 800 lawyers use the products my team runs. The code belongs to the firm, so it is not linked.</p>
 </div>
 </section>
 
